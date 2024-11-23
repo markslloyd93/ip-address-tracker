@@ -1,0 +1,81 @@
+:root{
+    --blue: #1d3557;
+    --blue-med: #457b9d;
+    --blue-light: #a8dadc;
+    --grey-light: #f1faee;
+    --red: #e63946;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header,#map { height: 50vh; }
+
+.header h1,
+.header form{
+    text-align: center;
+}
+
+.header{
+    background: var(--blue);
+}
+.header h1{
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.header form{
+    margin: 2rem 0;
+}
+
+.tracker-info{
+    background: var(--white);
+    border-radius: 1rem;
+}
+
+.tracker-info ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    height: 10rem
+}

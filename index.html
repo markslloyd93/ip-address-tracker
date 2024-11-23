@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Tracker</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+    <main>
+        <section class="header">
+            <div class="container">
+                <h1>IP address tracker</h1>
+                <form action="">
+                    <label for="ipAddress"></label>
+                    <input type="text" value="" id="ipAddress">
+                    <button type="submit" value="search" data-search="search">search</button>
+                </form>
+                <article class="tracker-info">
+                    <ul>
+                        <li class="tracker-info__item" data-tracker="ip"></li>
+                        <li class="tracker-info__item" data-tracker="location"></li>
+                        <li class="tracker-info__item" data-tracker="timezone"></li>
+                        <li class="tracker-info__item" data-tracker="isp"></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script type="module" src="./src/main.js"></script>
+</html>
